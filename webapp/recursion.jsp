@@ -35,7 +35,7 @@
          */
         //TODO
 	int result;
-	if (value = 1)
+	if (value == 1)
 	{
 		result = 1;
 	}
@@ -74,7 +74,16 @@
     public int fibonacci(int n)
     {
         //TODO
-	return 0;
+	int result;
+	if (n == 1 || n == 2)
+	{
+		result = 1;
+	}
+	else 
+	{
+		result = fibonacci(n-1) + fibonacci(n-2);
+	}
+	return result;
     }
 
     
