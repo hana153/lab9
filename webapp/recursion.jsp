@@ -13,8 +13,8 @@
      * This lab tests your ability to implement recursion for several functions.
      * 
      * @authors: Stephen, Mukhtar, MoSho
-     * @editer: YOUR_NAME_HERE
-     * @version DATE_HERE
+     * @editer: Hana Stevenson
+     * @version 2019-04-01
      */
 
     /** **********************************************************************
@@ -34,8 +34,11 @@
          * This lets our recursion know when to stop.
          */
         //TODO
-
-
+	int result;
+	if (value = 1)
+	{
+		result = 1;
+	}
         /*
          * Here is the recursive statement. The function calls itself when the 
          * base case is not met.
@@ -45,7 +48,11 @@
          * By doing this, we break up the equation n! into n! = n * (n-1)!.
          */
         //TODO
-	return 0;
+	else
+	{
+		result = value * factorial(value-1);
+	}
+	return result;
     }
 
     /** **********************************************************************
