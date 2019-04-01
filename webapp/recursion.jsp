@@ -168,11 +168,15 @@
      */
     public int nnaryTreeSize(int branchingFactor, int height)
     {
+	int result;
         if (height == 1) 
         {
-    	    //TODO
+    	   result = 1; //TODO
         }
-        
+        else
+	{
+		result = (nnaryTreeSize(branchingFactor, height - 1) * branchingFactor);
+
     	//TODO
 	return 0;
     }
