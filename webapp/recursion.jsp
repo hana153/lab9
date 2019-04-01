@@ -178,7 +178,7 @@
 		result = (nnaryTreeSize(branchingFactor, height - 1) * branchingFactor);
 
     	//TODO
-	return 0;
+	return result;
     }
 
     /** **********************************************************************
