@@ -175,7 +175,8 @@
         }
 	else 
 	{
-		result = (nnaryTreeSize(branchingFactor, height - 1) + (height * branchingFactor);
+		result = (int)Math.pow(branchingFactor, height - 1) + nnaryTreeSize(branchingFactor, height - 1);
+	}
     	//TODO
 	return result;
     }
@@ -192,17 +193,16 @@
     {
     	//TODO
 	int result = 0;
-	for (Tree tree1 : tree.getChilderen())
+	if (tree.children.size() == 0)
 	{
-		int sum = 0;
-		if (tree1.children.size() >= 1)
-		{
-			sum += treeSum(tree1);
-		}
-		result += sum + tree1.value;
+        	return tree.value;
 	}
+	for (Tree tree1 : tree.getChildren())
+	{
+               	result += treeSum(tree1);
+        }    
 
-	return result;
+        return result + tree.value;
     }
     
     /** **********************************************************************
